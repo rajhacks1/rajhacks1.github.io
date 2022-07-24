@@ -1,0 +1,489 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+@charset "utf-8";
+
+* {
+	padding:0px;
+	margin:0px;
+	height :100% 100%;
+    }
+
+body   
+{
+    background: #FFFFF;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #FFFFFF;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #DCDCDC;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+/*.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}*/
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+
+div.hideSkiplink
+{
+    /*background-color:#3a4f63;*/
+    width:100%;
+    
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+    
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #E8EEF4;
+    border: 1px #4e667d solid;
+    color: #034AF3;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight:bold;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #034AF3;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+/*fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}*/
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+/*legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}*/
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+/*
+=======================================================================
+	Footer
+=======================================================================
+*/
+#footer {
+	width:100%;
+	float:left;
+}
+#footer .foot_inner{
+	width:100%;
+	padding:0px 0px;
+	background-repeat:repeat-x;
+	/*background-color:#465C71;*/
+	border:#5484bf solid 1px;
+	margin:0px auto;
+	color:#FFF;
+}
+#footer .foot_inner a{
+	color:#FFF;
+}
+/*
+=======================================================================
+	About Website
+=======================================================================
+*/
+#footer .aboutweb{
+	width:220px;
+	float:left;
+	margin-right:20px;
+}
+#footer .aboutweb h6{
+	width:220px;
+	border-bottom:#7196c4 solid 1px;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	margin-bottom:15px;
+}
+#footer .aboutweb ul{
+	width:220px;
+	list-style:none;
+}
+#footer .aboutweb ul li{
+	width:207px;
+	padding-left:13px;
+	margin-bottom:8px;
+	background-image:url(../images/arrow_white.png);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+/*
+=======================================================================
+	Research
+=======================================================================
+*/
+#footer .research{
+	width:220px;
+	float:left;
+	margin-right:20px;
+}
+#footer .research h6{
+	width:220px;
+	border-bottom:#7196c4 solid 1px;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	margin-bottom:15px;
+}
+#footer .research ul{
+	width:220px;
+	list-style:none;
+}
+#footer .research ul li{
+	width:207px;
+	padding-left:13px;
+	margin-bottom:8px;
+	background-image:url(../images/arrow_white.png);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+/*
+=======================================================================
+	Sharing Expertise
+=======================================================================
+*/
+#footer .sharingexp{
+	width:220px;
+	float:left;
+}
+#footer .sharingexp h6{
+	width:220px;
+	border-bottom:#7196c4 solid 1px;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	margin-bottom:15px;
+}
+#footer .sharingexp ul{
+	width:220px;
+	list-style:none;
+}
+#footer .sharingexp ul li{
+	width:207px;
+	padding-left:13px;
+	margin-bottom:8px;
+	background-image:url(../images/arrow_white.png);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+/*
+=======================================================================
+	Address
+=======================================================================
+*/
+#footer .adrs{
+	width:200px;
+	float:right;
+}
+#footer .adrs a.footlogo{
+	margin:20px 0px 10px 0px;
+	float:left;
+}
+/*
+=======================================================================
+	Copyrights
+=======================================================================
+*/
+#footer .copy_inner{
+	width:100%;
+	margin:0px auto;
+}
+#footer .copy_inner p{
+	float:left;
+	padding-top:3px;
+    color: #000000;
+}
+#footer .copy_inner a.top{
+	float:right;
+	width:34px;
+	height:15px;
+	padding-top:20px;
+	text-align:justify;
+	background-image:url(../images/top.html);
+	/*background-color: #465C71;*/
+	background-repeat:no-repeat;
+	color:#FFF;
+	font-size:12px;
+	border:#5484bf solid 1px;
+	margin-right:10px;
+}
+
+    #masthead {
+	    width:100%;
+	    height:30px;
+	    float:left;
+	    background-color:#fff;
+	    /*background-image:url(../images/ritplate.jpg);*/
+	    margin:0px,auto;
+    }
+.smallhead {
+	height:181px !important;
+}
+/*
+=======================================================================
+	Top Section
+=======================================================================
+*/
+.topsec {
+	width:100%;
+	height:30px;
+	/*background-image:url(../images/ritplate.jpg);*/
+	position:fixed;
+	z-index:3;
+	/*background-color:#121219;*/
+	background-color: #5c87b2;
+}
+
+#content_sec {
+	width:100%;
+	float:left;
+}
+#content_sec .inner{
+	/*background-color:#EAEAEA;*/
+	width:95%;
+	padding:10px;
+}
